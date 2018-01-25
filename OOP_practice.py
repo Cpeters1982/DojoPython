@@ -1,3 +1,4 @@
+# pylint: disable=invalid-name
 # class User(object):
 #     '''Make a class of User that contains the following attributes and methods'''
 #     def __init__(self, name, email):
@@ -87,28 +88,62 @@ Any function included in the parent class definition can be called by an object 
 '''
 
 
-class Bike(object):
-    def __init__(self, price, max_speed, miles):
-        self.price = price
-        self.max_speed = max_speed
-        self.miles = 0
-    def displayinfo(self):
-        # print self.price, self.max_speed, self.miles
-        print "This bike costs ${}. It has a max speed of {}. It has been ridden {} miles.".format(self.price, self.max_speed, self.miles)
-        # print self
-        return self
-    def ride(self):
-        print "Riding " 
-        self.miles = self.miles+10
-        return self
-    def reverse(self):
-        self.miles = self.miles-5 if self.miles-5 > 0 else 0
-        return self
+# class Bike(object):
+#     '''
+#     Bike class!
+#     '''
+#     def __init__(self, price, max_speed, miles):
+#         self.price = price
+#         self.max_speed = max_speed
+#         self.miles = 0
+#     def displayinfo(self):
+#         '''
+#         Get that info, son!
+#         '''
+#         print "This bike costs ${}. It has a max speed of {}. It has been ridden {} miles.".format(self.price, self.max_speed, self.miles)
+#         return self
+#     def ride(self):
+#         '''
+#         Ride that bike!
+#         '''
+#         print "Riding "
+#         self.miles = self.miles+10
+#         return self
+#     def reverse(self):
+#         '''
+#         Better backpedal...
+#         '''
+#         self.miles = self.miles-5 if self.miles-5 > 0 else 0
+#         return self
 
-bike1 = Bike(200,10,0)
-bike2 = Bike(300,20,10)
-bike3 = Bike(600, 60, 20)
-# print bike1.price, bike1.max_speed, bike1.miles
-bike1.ride().ride().ride().reverse().displayinfo()
-bike2.ride().ride().reverse().reverse().displayinfo()
-bike3.reverse().reverse().reverse().displayinfo()
+# bike1 = Bike(200, 10, 0)
+# bike2 = Bike(300, 20, 0)
+# bike3 = Bike(600, 60, 0)
+# bike1.ride().ride().ride().reverse().displayinfo()
+# bike2.ride().ride().reverse().reverse().displayinfo()
+# bike3.reverse().reverse().reverse().displayinfo()
+
+
+# class Car(object):
+#     def __init__(self, price, speed, fuel, mileage):
+#         self.price = price
+#         self.speed = speed
+#         self.fuel = fuel
+#         self.mileage = mileage
+#         if self.price > 10000:
+#             self.tax = 0.15
+#         else:
+#             self.tax = 0.12
+#         self.display_all()
+#     def display_all(self):
+#         print 'Price: ' + str(self.price)
+#         print 'Speed: ' + self.speed
+#         print 'Fuel: ' + self.fuel
+#         print 'Mileage: ' + self.mileage
+#         print 'Tax: ' + str(self.tax)
+#         return self
+
+# car1 = Car(20000, '100mph', 'Full', '30mpg')
+# car2 = Car(1000, '45mph', 'Not full', '15mpg')
+# car3 = Car(10000, '75mph', 'Full', '32mpg')
+
