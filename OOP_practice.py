@@ -1,4 +1,4 @@
-# pylint: disable=invalid-name
+# # pylint: disable=invalid-name
 # class User(object):
 #     '''Make a class of User that contains the following attributes and methods'''
 #     def __init__(self, name, email):
@@ -6,18 +6,20 @@
 #         self.name = name
 #         self.email = email
 #         self.logged = True
+#     # Login method changes the logged status for a single instance (the instance calling the method)
 #     def login(self):
 #         '''Creates a Login method for the User-class. This method logs the user in'''
 #         self.logged = True
 #         print self.name + " is logged in."
 #         return self
+#     # logout method changes the logged status for a single instance (the instance calling the method)
 #     def logout(self):
 #         '''Creates a Logout method for the User-class. This method logs the user out.'''
 #         self.logged = False
 #         print self.name + " is not logged in."
 #         return self
 #     def show(self):
-#         '''Creates a Show method for the User-class. Displays the users' name and email'''
+#         '''Creates a Show method for the User-class. Prints the users' name and email'''
 #         print "My name is {}. You can email me at {}".format(self.name, self.email)
 #         return self
 
