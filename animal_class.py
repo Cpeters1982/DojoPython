@@ -9,7 +9,7 @@ class Animal(object):
         self.health = self.health-5
         return self
     def display_health(self):
-        print 'the animal has {} health'.format(self.health)
+        print 'The animal is named {} and has {} health'.format(self.name, self.health)
         return self
 class Dog(Animal):
     def set_health(self):
