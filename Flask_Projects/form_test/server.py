@@ -33,6 +33,6 @@ app.run(debug=True)
 # We can basically copy the session data from server.py
 # into our templates using the same line but encased in {{}}
 # That is as valid as putting session['var'] in our show_user function
-# but it looks much nicer in the template...also easier to test.abs
+# but it looks much nicer in the template...also easier to test
 # Remember that a simple print statement is a pretty good test to make sure
 # we are hitting our routes.
