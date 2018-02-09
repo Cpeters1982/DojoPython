@@ -1,5 +1,8 @@
 from flask import Flask, render_template, redirect, request, session
-
+'''
+This simple app counts the numbe rof times index.html has been loaded by the user in session. 
+Demonstrates session, persistent data and POST routes
+'''
 app = Flask(__name__)
 app.secret_key = "KeepItSecret"
 
