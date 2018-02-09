@@ -13,7 +13,7 @@ def index():
 
 @app.route('/countTwo', methods=['POST'])
 def counter():
-    if request.form['submit'] == 'plusTwo':
+    if request.form['submit'] == 'addTwo':
         session['count'] += 1
     elif request.form['submit'] == 'reset':
         session['count'] = 0
